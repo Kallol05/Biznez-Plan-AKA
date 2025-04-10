@@ -1,0 +1,1772 @@
+/* Financial Simulator Styles */
+.simulator-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.simulator-intro h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.simulator-intro p {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+}
+
+.intro-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .intro-features {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.feature-item {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.feature-item h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.feature-item p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+.start-game-button {
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start-game-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Setup Styles */
+.setup-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.setup-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 28px;
+  color: var(--text-primary);
+}
+
+.setup-step {
+  padding: 20px;
+}
+
+.setup-step h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.setup-step p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.career-options {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .career-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .career-options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.career-option {
+  background-color: var(--bg-light);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.career-option:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.career-option.selected {
+  border-color: #4f46e5;
+  background-color: rgba(79, 70, 229, 0.05);
+}
+
+.career-option h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.career-details {
+  margin-bottom: 12px;
+}
+
+.career-salary,
+.career-growth,
+.career-skill {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.career-description {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.age-selection,
+.financial-setup {
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 16px;
+}
+
+.form-group input[type="range"] {
+  width: 100%;
+  margin-bottom: 8px;
+  accent-color: #4f46e5;
+}
+
+.range-value {
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.simulation-length {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-light);
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.length-label {
+  font-size: 16px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.length-value {
+  font-size: 18px;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.debt-options {
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.debt-info {
+  font-size: 12px;
+  color: var(--text-light);
+  margin-top: 4px;
+}
+
+.net-worth-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.summary-label {
+  font-size: 16px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.summary-value {
+  font-size: 20px;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.setup-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.setup-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.setup-button.prev {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.setup-button.next,
+.setup-button.start {
+  background-color: #4f46e5;
+  border: none;
+  color: white;
+}
+
+.setup-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.setup-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Game Styles */
+.simulator-game {
+  width: 100%;
+}
+
+.game-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
+  background-color: var(--bg-card);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-date {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.game-age {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.game-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.control-button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.control-button.play::before {
+  content: "▶";
+}
+
+.control-button.pause::before {
+  content: "⏸";
+}
+
+.speed-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.speed-button {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.speed-button.active {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+  color: white;
+}
+
+.player-summary {
+  display: flex;
+  gap: 16px;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.summary-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.game-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.tab-button {
+  background-color: var(--bg-card);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.tab-button:hover {
+  background-color: rgba(79, 70, 229, 0.05);
+  color: #4f46e5;
+}
+
+.tab-button.active {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.game-content {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Dashboard Tab */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.dashboard-card {
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-card h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.summary-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cashflow-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .cashflow-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.cashflow-section h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.cashflow-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.cashflow-row.total {
+  font-weight: 600;
+  border-top: 1px solid var(--border-color);
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.net-cashflow {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: var(--bg-card);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cashflow-value.positive {
+  color: #10b981;
+}
+
+.cashflow-value.negative {
+  color: #ef4444;
+}
+
+.market-indicators {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .market-indicators {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.market-indicator {
+  background-color: var(--bg-card);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.indicator-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.indicator-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.indicator-trend {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.indicator-trend.bullish {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.indicator-trend.bearish {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.indicator-trend.neutral {
+  background-color: rgba(107, 114, 128, 0.1);
+  color: #6b7280;
+}
+
+/* Invest Tab */
+.invest-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.invest-option-card {
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.invest-option-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.invest-option-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.stock-list {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.stock-header {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr 1fr 1fr 1.2fr;
+  background-color: var(--bg-card);
+  padding: 10px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stock-row {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr 1fr 1fr 1.2fr;
+  padding: 10px;
+  border-top: 1px solid var(--border-color);
+}
+
+.stock-row:hover {
+  background-color: var(--bg-card);
+}
+
+.stock-cell {
+  display: flex;
+  align-items: center;
+}
+
+.stock-cell.positive {
+  color: #10b981;
+}
+
+.stock-cell.negative {
+  color: #ef4444;
+}
+
+.stock-cell.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-button {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.action-button.buy {
+  background-color: #10b981;
+  color: white;
+}
+
+.action-button.sell {
+  background-color: #ef4444;
+  color: white;
+}
+
+.action-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Event Modal */
+.event-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.event-content {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.event-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.event-description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.event-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-option {
+  background-color: var(--bg-light);
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+  font-size: 16px;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.event-option:hover {
+  background-color: rgba(79, 70, 229, 0.05);
+  transform: translateY(-2px);
+}
+
+.option-effect {
+  display: block;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 8px;
+}
+
+/* Life End Summary */
+.life-end-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.life-end-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 28px;
+  color: var(--text-primary);
+}
+
+.life-summary {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.summary-header h3 {
+  font-size: 22px;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.age-span {
+  font-size: 16px;
+  color: var(--text-secondary);
+  background-color: var(--bg-light);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .summary-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.stat-item {
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stat-value.highlight {
+  color: #4f46e5;
+  font-size: 24px;
+}
+
+.stat-value.positive {
+  color: #10b981;
+}
+
+.stat-value.negative {
+  color: #ef4444;
+}
+
+.performance-message {
+  background-color: var(--bg-light);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.performance-message h4 {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.performance-message span.exceptional {
+  color: #8b5cf6;
+}
+
+.performance-message span.excellent {
+  color: #10b981;
+}
+
+.performance-message span.good {
+  color: #3b82f6;
+}
+
+.performance-message span.average {
+  color: #f59e0b;
+}
+
+.performance-message span.poor {
+  color: #f97316;
+}
+
+.performance-message span.negative {
+  color: #ef4444;
+}
+
+.performance-message p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.restart-button {
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.restart-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Career Tab Styles */
+.career-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.career-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.career-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.career-skills {
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.skill-item {
+  background-color: var(--bg-card);
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.skill-bar {
+  height: 8px;
+  background-color: var(--bg-light);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color: #4f46e5;
+  border-radius: 4px;
+}
+
+.skill-level {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.skill-improve-btn {
+  margin-top: 8px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.skill-improve-btn:hover {
+  background-color: #3b34c3;
+}
+
+.skill-improve-btn:disabled {
+  background-color: #a5a5a5;
+  cursor: not-allowed;
+}
+
+.career-opportunities {
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.opportunities-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .opportunities-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.opportunity-card {
+  background-color: var(--bg-card);
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.opportunity-card h5 {
+  font-size: 16px;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.opportunity-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.opportunity-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.detail-item {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.detail-item span {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.opportunity-btn,
+.career-select {
+  margin-top: 8px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.opportunity-btn:hover {
+  background-color: #3b34c3;
+}
+
+.opportunity-btn:disabled {
+  background-color: #a5a5a5;
+  cursor: not-allowed;
+}
+
+.career-select {
+  background-color: var(--bg-light);
+  color: var(--text-primary);
+  padding: 10px;
+}
+
+/* Assets Tab Styles */
+.assets-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.assets-overview {
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.asset-allocation-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.pie-chart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 24px;
+}
+
+.pie-segments {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.pie-segment {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 50%;
+}
+
+.pie-segment.stocks {
+  background-color: #4f46e5;
+}
+
+.pie-segment.real-estate {
+  background-color: #10b981;
+}
+
+.pie-segment.cash {
+  background-color: #f59e0b;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.legend-color.stocks {
+  background-color: #4f46e5;
+}
+
+.legend-color.real-estate {
+  background-color: #10b981;
+}
+
+.legend-color.cash {
+  background-color: #f59e0b;
+}
+
+.legend-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.legend-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.assets-details {
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.assets-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.asset-tab-btn {
+  background-color: var(--bg-card);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.asset-tab-btn.active {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.stocks-table {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.stocks-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: var(--bg-card);
+  padding: 10px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stock-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  border-top: 1px solid var(--border-color);
+}
+
+.sell-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.no-assets-message {
+  background-color: var(--bg-card);
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .properties-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.property-card {
+  background-color: var(--bg-card);
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.property-header {
+  margin-bottom: 8px;
+}
+
+.property-header h5 {
+  font-size: 16px;
+  margin: 0 0 4px 0;
+  color: var(--text-primary);
+}
+
+.property-location {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.property-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.property-detail {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.property-detail span {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.property-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.property-action-btn,
+.buy-property-btn {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.property-action-btn:first-child {
+  background-color: #ef4444;
+}
+
+.property-action-btn:hover,
+.buy-property-btn:hover {
+  filter: brightness(0.9);
+}
+
+.property-action-btn:disabled,
+.buy-property-btn:disabled {
+  background-color: #a5a5a5;
+  cursor: not-allowed;
+}
+
+.other-assets-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.asset-category {
+  background-color: var(--bg-card);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.mutual-funds-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.fund-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: var(--bg-light);
+  border-radius: 6px;
+}
+
+.fund-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.fund-value {
+  color: var(--text-primary);
+}
+
+.fund-return {
+  color: #10b981;
+}
+
+.sell-fund-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.available-funds {
+  margin-top: 16px;
+}
+
+.funds-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.available-fund {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: var(--bg-light);
+  border-radius: 6px;
+}
+
+.fund-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fund-category {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.fund-details {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.fund-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fund-amount {
+  width: 100px;
+  padding: 4px 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.invest-btn {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Tax Tab Styles */
+.taxes-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tax-overview {
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.tax-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .tax-summary {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tax-item {
+  background-color: var(--bg-card);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.tax-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.tax-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.tax-planning {
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.strategies-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .strategies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.strategy-card {
+  background-color: var(--bg-card);
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.strategy-card h4 {
+  font-size: 16px;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.strategy-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.strategy-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.strategy-btn {
+  margin-top: 8px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.strategy-btn:hover {
+  background-color: #3b34c3;
+}
+
+.strategy-btn:disabled {
+  background-color: #a5a5a5;
+  cursor: not-allowed;
+}
+
+.tax-calculator {
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.calculator-form {
+  margin-top: 16px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.form-row label {
+  width: 150px;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.form-row input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.calculator-results {
+  margin-top: 16px;
+  background-color: var(--bg-card);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.result-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.result-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Achievements Tab Styles */
+.achievements-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.achievements-header {
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.achievements-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.achievements-list {
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.achievement-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--bg-card);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.achievement-icon {
+  font-size: 32px;
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-title {
+  font-size: 16px;
+  margin: 0 0 4px 0;
+  color: var(--text-primary);
+}
+
+.achievement-description {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.achievement-date {
+  font-size: 12px;
+  color: var(--text-light);
+}
+
+.no-achievements {
+  text-align: center;
+  padding: 24px;
+  color: var(--text-secondary);
+}
+
+.milestones-section {
+  background-color: var(--bg-light);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.milestones-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .milestones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.milestone-card {
+  background-color: var(--bg-card);
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid #a5a5a5;
+}
+
+.milestone-card.achieved {
+  border-left-color: #10b981;
+}
+
+.milestone-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.milestone-header h4 {
+  font-size: 16px;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.milestone-status {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background-color: #a5a5a5;
+  color: white;
+}
+
+.milestone-card.achieved .milestone-status {
+  background-color: #10b981;
+}
+
+.milestone-description {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.milestone-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: var(--bg-light);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4f46e5;
+  border-radius: 4px;
+}
+
+.milestone-card.achieved .progress-fill {
+  background-color: #10b981;
+}
+
+.progress-text {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-align: right;
+}
+
