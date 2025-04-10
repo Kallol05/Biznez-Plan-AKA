@@ -60,7 +60,7 @@ Built by First-Year Computer Science Students
 🚀 Passionate about tech, learning, and building for real-world problems.
 
 
-📹 Watch the Full Demo Video: 
+📹 Watch the Full Demo Video: https://www.youtube.com/embed/Wp1GgkyuQXY
 📬 Feedback
 We’d love to hear your feedback or collaborate!
 Reach out via email contact.aritra2006@gmail.com
