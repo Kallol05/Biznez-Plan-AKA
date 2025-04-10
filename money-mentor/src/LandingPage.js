@@ -77,7 +77,7 @@ function LandingPage({ onGetStarted }) {
             
             <div className="animate-fade-in video-container-large mx-auto">
               <iframe
-                src="https://www.youtube.com/embed/h1nKO151gh0"
+                src="https://www.youtube.com/embed/Wp1GgkyuQXY"
                 title="MoneyMentor Demo"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
